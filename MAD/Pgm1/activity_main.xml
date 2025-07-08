@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:text="Name:"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="72dp"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/nameText"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/phText"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Phone Number:"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <EditText
+        android:id="@+id/phEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/phText"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:text="Gender:"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phText" />
+
+    <RadioGroup
+        android:id="@+id/rb1"
+        android:layout_width="179dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/genderText"
+        app:layout_constraintTop_toBottomOf="@+id/phEdit">
+
+        <RadioButton
+            android:id="@+id/rb1Button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rb1Button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="96dp"
+        android:text="Known Languages"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderText" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="44dp"
+        android:text="CPP"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/rb1" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="20dp"
+        android:text="Swift"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="20dp"
+        android:text="Python"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="120dp"
+        android:text="Semester"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="246dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<!--    package com.example.mypgm1;-->
+
+<!--    import android.os.Bundle;-->
+<!--    import android.view.View;-->
+<!--    import android.widget.AdapterView;-->
+<!--    import android.widget.ArrayAdapter;-->
+<!--    import android.widget.Button;-->
+<!--    import android.widget.EditText;-->
+<!--    import android.widget.RadioGroup;-->
+<!--    import android.widget.RadioButton;-->
+<!--    import android.widget.Spinner;-->
+<!--    import android.widget.Switch;-->
+<!--    import android.widget.Toast;-->
+
+<!--    import androidx.appcompat.app.AppCompatActivity;-->
+<!--    import androidx.core.graphics.Insets;-->
+<!--    import androidx.core.view.ViewCompat;-->
+<!--    import androidx.core.view.WindowInsetsCompat;-->
+<!--    import androidx.activity.EdgeToEdge;-->
+
+<!--    import java.util.ArrayList;-->
+
+<!--    public class MainActivity extends AppCompatActivity {-->
+<!--    Spinner s1;-->
+<!--    EditText name, ph;-->
+<!--    RadioGroup gender;-->
+<!--    Switch lang1, lang2, lang3;-->
+<!--    String semvalue = "No Item";-->
+
+<!--    @Override-->
+<!--    protected void onCreate(Bundle savedInstanceState) {-->
+<!--    super.onCreate(savedInstanceState);-->
+<!--    EdgeToEdge.enable(this);-->
+<!--    setContentView(R.layout.activity_main);-->
+
+<!--    ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {-->
+<!--    Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());-->
+<!--    v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);-->
+<!--    return insets;-->
+<!--    });-->
+
+<!--    // Initialize views-->
+<!--    name = findViewById(R.id.nameEdit);-->
+<!--    ph = findViewById(R.id.phEdit);-->
+<!--    gender = findViewById(R.id.rb1);-->
+<!--    lang1 = findViewById(R.id.switch1);-->
+<!--    lang2 = findViewById(R.id.switch2);-->
+<!--    lang3 = findViewById(R.id.switch3);-->
+<!--    s1 = findViewById(R.id.spinner1);-->
+
+<!--    // Populate spinner with semester items-->
+<!--    ArrayList<String> semesters = new ArrayList<>();-->
+<!--    semesters.add("SEM1");-->
+<!--    semesters.add("SEM2");-->
+<!--    semesters.add("SEM3");-->
+<!--    semesters.add("SEM4");-->
+<!--    semesters.add("SEM5");-->
+<!--    semesters.add("SEM6");-->
+
+<!--    ArrayAdapter<String> adapter = new ArrayAdapter<>(this,-->
+<!--        androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,-->
+<!--        semesters);-->
+<!--        s1.setAdapter(adapter);-->
+
+<!--        // Spinner selection listener-->
+<!--        s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {-->
+<!--        @Override-->
+<!--        public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {-->
+<!--        semvalue = semesters.get(position);-->
+<!--        }-->
+
+<!--        @Override-->
+<!--        public void onNothingSelected(AdapterView<?> adapterView) {-->
+<!--        semvalue = "No Item";-->
+<!--        }-->
+<!--        });-->
+
+<!--        // Submit button (you need to add this button in your XML!)-->
+<!--        Button submitBtn = findViewById(R.id.submitBtn);-->
+<!--        submitBtn.setOnClickListener(v -> {-->
+<!--        String nameVal = name.getText().toString().trim();-->
+<!--        String phoneVal = ph.getText().toString().trim();-->
+
+<!--        // Gender selection-->
+<!--        int selectedGenderId = gender.getCheckedRadioButtonId();-->
+<!--        String genderVal = "";-->
+<!--        if (selectedGenderId == R.id.rb1Button1) {-->
+<!--        genderVal = "Male";-->
+<!--        } else if (selectedGenderId == R.id.rb1Button2) {-->
+<!--        genderVal = "Female";-->
+<!--        }-->
+
+<!--        // Languages known-->
+<!--        ArrayList<String> languages = new ArrayList<>();-->
+<!--            if (lang1.isChecked()) languages.add("CPP");-->
+<!--            if (lang2.isChecked()) languages.add("Swift");-->
+<!--            if (lang3.isChecked()) languages.add("Python");-->
+
+<!--            String langVal = languages.isEmpty() ? "None" : String.join(", ", languages);-->
+
+<!--            // Simple validation example-->
+<!--            if (nameVal.isEmpty() || phoneVal.isEmpty() || genderVal.isEmpty() || semvalue.equals("No Item")) {-->
+<!--            Toast.makeText(MainActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();-->
+<!--            return;-->
+<!--            }-->
+
+<!--            // Show collected data in Toast (for demo)-->
+<!--            String result = "Name: " + nameVal +-->
+<!--            "\nPhone: " + phoneVal +-->
+<!--            "\nGender: " + genderVal +-->
+<!--            "\nLanguages: " + langVal +-->
+<!--            "\nSemester: " + semvalue;-->
+
+<!--            Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();-->
+<!--            });-->
+<!--            }-->
+<!--            }-->
