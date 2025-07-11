@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name" />
+
+ <GridLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:columnCount="4"
+     android:padding="18dp"
+     android:paddingHorizontal="30dp"
+     android:rowCount="3">
+
+  <Button
+      android:id="@+id/btn7"
+      android:layout_marginLeft="5dp"
+      android:text="7"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn8"
+      android:layout_marginLeft="5dp"
+      android:text="8"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn9"
+      android:layout_marginLeft="5dp"
+      android:text="9"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn10"
+      android:layout_marginLeft="5dp"
+      android:text="+"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn4"
+      android:layout_marginLeft="5dp"
+      android:text="4"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn5"
+      android:layout_marginLeft="5dp"
+      android:text="5"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn6"
+      android:layout_marginLeft="5dp"
+      android:text="6"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn11"
+      android:layout_marginLeft="5dp"
+      android:text="-"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn1"
+      android:layout_marginLeft="5dp"
+      android:text="1"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn2"
+      android:layout_marginLeft="5dp"
+      android:text="2"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn3"
+      android:layout_marginLeft="5dp"
+      android:text="3"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn12"
+      android:layout_marginLeft="5dp"
+      android:text="*"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn0"
+      android:layout_marginLeft="5dp"
+      android:text="0"
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn15"
+      android:layout_marginLeft="5dp"
+      android:text="."
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn14"
+      android:layout_marginLeft="5dp"
+      android:text="="
+      android:textSize="30dp" />
+
+  <Button
+      android:id="@+id/btn13"
+      android:layout_marginLeft="5dp"
+      android:text="/"
+      android:textSize="30dp" />
+
+
+
+ </GridLayout>
+
+</LinearLayout>
