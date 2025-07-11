@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
               ed.putString("username",name.getText().toString());
               ed.apply();
               ed.putString("password",pass.getText().toString());
-              Intent i=new Intent(MainActivity.this,ViewActivity.class);
+              ed.apply();
+              Intent i = new Intent(MainActivity.this,ViewActivity.class);
               startActivity(i);
-
           }
       });
     }
