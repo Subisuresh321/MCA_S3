@@ -159,12 +159,13 @@
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
         android:layout_marginTop="16dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner1"
-        android:text="Register"
-        />
+        app:layout_constraintVertical_bias="0.1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -172,120 +173,120 @@
 
 
 
-<!--    package com.example.mypgm1;-->
+    <!--    package com.example.mypgm1;-->
 
-<!--    import android.os.Bundle;-->
-<!--    import android.view.View;-->
-<!--    import android.widget.AdapterView;-->
-<!--    import android.widget.ArrayAdapter;-->
-<!--    import android.widget.Button;-->
-<!--    import android.widget.EditText;-->
-<!--    import android.widget.RadioGroup;-->
-<!--    import android.widget.RadioButton;-->
-<!--    import android.widget.Spinner;-->
-<!--    import android.widget.Switch;-->
-<!--    import android.widget.Toast;-->
+    <!--    import android.os.Bundle;-->
+    <!--    import android.view.View;-->
+    <!--    import android.widget.AdapterView;-->
+    <!--    import android.widget.ArrayAdapter;-->
+    <!--    import android.widget.Button;-->
+    <!--    import android.widget.EditText;-->
+    <!--    import android.widget.RadioGroup;-->
+    <!--    import android.widget.RadioButton;-->
+    <!--    import android.widget.Spinner;-->
+    <!--    import android.widget.Switch;-->
+    <!--    import android.widget.Toast;-->
 
-<!--    import androidx.appcompat.app.AppCompatActivity;-->
-<!--    import androidx.core.graphics.Insets;-->
-<!--    import androidx.core.view.ViewCompat;-->
-<!--    import androidx.core.view.WindowInsetsCompat;-->
-<!--    import androidx.activity.EdgeToEdge;-->
+    <!--    import androidx.appcompat.app.AppCompatActivity;-->
+    <!--    import androidx.core.graphics.Insets;-->
+    <!--    import androidx.core.view.ViewCompat;-->
+    <!--    import androidx.core.view.WindowInsetsCompat;-->
+    <!--    import androidx.activity.EdgeToEdge;-->
 
-<!--    import java.util.ArrayList;-->
+    <!--    import java.util.ArrayList;-->
 
-<!--    public class MainActivity extends AppCompatActivity {-->
-<!--    Spinner s1;-->
-<!--    EditText name, ph;-->
-<!--    RadioGroup gender;-->
-<!--    Switch lang1, lang2, lang3;-->
-<!--    String semvalue = "No Item";-->
+    <!--    public class MainActivity extends AppCompatActivity {-->
+    <!--    Spinner s1;-->
+    <!--    EditText name, ph;-->
+    <!--    RadioGroup gender;-->
+    <!--    Switch lang1, lang2, lang3;-->
+    <!--    String semvalue = "No Item";-->
 
-<!--    @Override-->
-<!--    protected void onCreate(Bundle savedInstanceState) {-->
-<!--    super.onCreate(savedInstanceState);-->
-<!--    EdgeToEdge.enable(this);-->
-<!--    setContentView(R.layout.activity_main);-->
+    <!--    @Override-->
+    <!--    protected void onCreate(Bundle savedInstanceState) {-->
+    <!--    super.onCreate(savedInstanceState);-->
+    <!--    EdgeToEdge.enable(this);-->
+    <!--    setContentView(R.layout.activity_main);-->
 
-<!--    ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {-->
-<!--    Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());-->
-<!--    v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);-->
-<!--    return insets;-->
-<!--    });-->
+    <!--    ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {-->
+    <!--    Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());-->
+    <!--    v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);-->
+    <!--    return insets;-->
+    <!--    });-->
 
-<!--    // Initialize views-->
-<!--    name = findViewById(R.id.nameEdit);-->
-<!--    ph = findViewById(R.id.phEdit);-->
-<!--    gender = findViewById(R.id.rb1);-->
-<!--    lang1 = findViewById(R.id.switch1);-->
-<!--    lang2 = findViewById(R.id.switch2);-->
-<!--    lang3 = findViewById(R.id.switch3);-->
-<!--    s1 = findViewById(R.id.spinner1);-->
+    <!--    // Initialize views-->
+    <!--    name = findViewById(R.id.nameEdit);-->
+    <!--    ph = findViewById(R.id.phEdit);-->
+    <!--    gender = findViewById(R.id.rb1);-->
+    <!--    lang1 = findViewById(R.id.switch1);-->
+    <!--    lang2 = findViewById(R.id.switch2);-->
+    <!--    lang3 = findViewById(R.id.switch3);-->
+    <!--    s1 = findViewById(R.id.spinner1);-->
 
-<!--    // Populate spinner with semester items-->
-<!--    ArrayList<String> semesters = new ArrayList<>();-->
-<!--    semesters.add("SEM1");-->
-<!--    semesters.add("SEM2");-->
-<!--    semesters.add("SEM3");-->
-<!--    semesters.add("SEM4");-->
-<!--    semesters.add("SEM5");-->
-<!--    semesters.add("SEM6");-->
+    <!--    // Populate spinner with semester items-->
+    <!--    ArrayList<String> semesters = new ArrayList<>();-->
+    <!--    semesters.add("SEM1");-->
+    <!--    semesters.add("SEM2");-->
+    <!--    semesters.add("SEM3");-->
+    <!--    semesters.add("SEM4");-->
+    <!--    semesters.add("SEM5");-->
+    <!--    semesters.add("SEM6");-->
 
-<!--    ArrayAdapter<String> adapter = new ArrayAdapter<>(this,-->
-<!--        androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,-->
-<!--        semesters);-->
-<!--        s1.setAdapter(adapter);-->
+    <!--    ArrayAdapter<String> adapter = new ArrayAdapter<>(this,-->
+    <!--        androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,-->
+    <!--        semesters);-->
+    <!--        s1.setAdapter(adapter);-->
 
-<!--        // Spinner selection listener-->
-<!--        s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {-->
-<!--        @Override-->
-<!--        public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {-->
-<!--        semvalue = semesters.get(position);-->
-<!--        }-->
+    <!--        // Spinner selection listener-->
+    <!--        s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {-->
+    <!--        @Override-->
+    <!--        public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {-->
+    <!--        semvalue = semesters.get(position);-->
+    <!--        }-->
 
-<!--        @Override-->
-<!--        public void onNothingSelected(AdapterView<?> adapterView) {-->
-<!--        semvalue = "No Item";-->
-<!--        }-->
-<!--        });-->
+    <!--        @Override-->
+    <!--        public void onNothingSelected(AdapterView<?> adapterView) {-->
+    <!--        semvalue = "No Item";-->
+    <!--        }-->
+    <!--        });-->
 
-<!--        // Submit button (you need to add this button in your XML!)-->
-<!--        Button submitBtn = findViewById(R.id.submitBtn);-->
-<!--        submitBtn.setOnClickListener(v -> {-->
-<!--        String nameVal = name.getText().toString().trim();-->
-<!--        String phoneVal = ph.getText().toString().trim();-->
+    <!--        // Submit button (you need to add this button in your XML!)-->
+    <!--        Button submitBtn = findViewById(R.id.submitBtn);-->
+    <!--        submitBtn.setOnClickListener(v -> {-->
+    <!--        String nameVal = name.getText().toString().trim();-->
+    <!--        String phoneVal = ph.getText().toString().trim();-->
 
-<!--        // Gender selection-->
-<!--        int selectedGenderId = gender.getCheckedRadioButtonId();-->
-<!--        String genderVal = "";-->
-<!--        if (selectedGenderId == R.id.rb1Button1) {-->
-<!--        genderVal = "Male";-->
-<!--        } else if (selectedGenderId == R.id.rb1Button2) {-->
-<!--        genderVal = "Female";-->
-<!--        }-->
+    <!--        // Gender selection-->
+    <!--        int selectedGenderId = gender.getCheckedRadioButtonId();-->
+    <!--        String genderVal = "";-->
+    <!--        if (selectedGenderId == R.id.rb1Button1) {-->
+    <!--        genderVal = "Male";-->
+    <!--        } else if (selectedGenderId == R.id.rb1Button2) {-->
+    <!--        genderVal = "Female";-->
+    <!--        }-->
 
-<!--        // Languages known-->
-<!--        ArrayList<String> languages = new ArrayList<>();-->
-<!--            if (lang1.isChecked()) languages.add("CPP");-->
-<!--            if (lang2.isChecked()) languages.add("Swift");-->
-<!--            if (lang3.isChecked()) languages.add("Python");-->
+    <!--        // Languages known-->
+    <!--        ArrayList<String> languages = new ArrayList<>();-->
+    <!--            if (lang1.isChecked()) languages.add("CPP");-->
+    <!--            if (lang2.isChecked()) languages.add("Swift");-->
+    <!--            if (lang3.isChecked()) languages.add("Python");-->
 
-<!--            String langVal = languages.isEmpty() ? "None" : String.join(", ", languages);-->
+    <!--            String langVal = languages.isEmpty() ? "None" : String.join(", ", languages);-->
 
-<!--            // Simple validation example-->
-<!--            if (nameVal.isEmpty() || phoneVal.isEmpty() || genderVal.isEmpty() || semvalue.equals("No Item")) {-->
-<!--            Toast.makeText(MainActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();-->
-<!--            return;-->
-<!--            }-->
+    <!--            // Simple validation example-->
+    <!--            if (nameVal.isEmpty() || phoneVal.isEmpty() || genderVal.isEmpty() || semvalue.equals("No Item")) {-->
+    <!--            Toast.makeText(MainActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();-->
+    <!--            return;-->
+    <!--            }-->
 
-<!--            // Show collected data in Toast (for demo)-->
-<!--            String result = "Name: " + nameVal +-->
-<!--            "\nPhone: " + phoneVal +-->
-<!--            "\nGender: " + genderVal +-->
-<!--            "\nLanguages: " + langVal +-->
-<!--            "\nSemester: " + semvalue;-->
+    <!--            // Show collected data in Toast (for demo)-->
+    <!--            String result = "Name: " + nameVal +-->
+    <!--            "\nPhone: " + phoneVal +-->
+    <!--            "\nGender: " + genderVal +-->
+    <!--            "\nLanguages: " + langVal +-->
+    <!--            "\nSemester: " + semvalue;-->
 
-<!--            Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();-->
-<!--            });-->
-<!--            }-->
-<!--            }-->
+    <!--            Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();-->
+    <!--            });-->
+    <!--            }-->
+    <!--            }-->

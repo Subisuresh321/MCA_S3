@@ -11,6 +11,7 @@ import android.widget.Spinner;
 import android.widget.Switch;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -23,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
     EditText name,ph;
     RadioGroup gender;
     Switch lang1,lang2,lang3;
-    String semvalue,genderval;
     Button btn;
 
+    String nameval,phval,langval,semvalue,genderval;
 
 
 
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         btn=(Button)findViewById(R.id.btn1);
 
 
+
+
         ArrayList<String> obj1 = new ArrayList<String>();
         obj1.add("SEM1");
         obj1.add("SEM2");
@@ -67,21 +70,28 @@ public class MainActivity extends AppCompatActivity {
                 semvalue="No Item";
             }
         });
-        gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                genderval=findViewById(R.id.i).getTex;
-            }
-        });
+        int genderid=gender.getCheckedRadioButtonId();
+
+        if(genderid == R.id.rb1Button1)
+        {
+            genderval="Male";
+        } else if (genderid == R.id.rb1Button2) {
+            genderval="Female";
+        }
+
+        ArrayList<String> langs=new ArrayList<String>();
+        if(lang1.isChecked()) langs.add("CPP");
+        if(lang2.isChecked()) langs.add("Swift");
+        if(lang3.isChecked()) langs.add("Python");
+
+        langval= langs.isEmpty()? "none": String.join(",",langs);
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nameval=name.getText().toString();
-                String phval=ph.getText().toString();
-                String nameval=name.getText().toString();
-                String nameval=name.getText().toString();
-                String nameval=name.getText().toString();
+                nameval=name.getText().toString();
+                phval=ph.getText().toString();
             }
         });
     }
