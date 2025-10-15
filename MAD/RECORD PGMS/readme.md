@@ -1,34 +1,14 @@
-# Android Project Readme
+# Program Java and XML File Paths
 
-This project contains standard Android application files. Here are the typical locations for the main XML layout and Java/Kotlin source files:
+Below is a table listing the clickable Java and XML file paths for programs 3, and 5 through 10. Click the links to navigate to the respective files/directories (assuming a typical GitHub repo structure).
 
-## 📂 File Locations
+| Program | Java File Path | XML File Path |
+|---------|---------------|--------------|
+| 3 | [MAD/RECORD PGMS/PGM3/app/src/main/java/com/example/pgm3](MAD/RECORD%20PGMS/PGM3/app/src/main/java/com/example/pgm3) | [MAD/RECORD PGMS/PGM3/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM3/app/src/main/res/layout) |
+| 5 | [MAD/RECORD PGMS/PGM5/app/src/main/java/com/example/pgm5](MAD/RECORD%20PGMS/PGM5/app/src/main/java/com/example/pgm5) | [MAD/RECORD PGMS/PGM5/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM5/app/src/main/res/layout) |
+| 6 | [MAD/RECORD PGMS/PGM6/app/src/main/java/com/example/pgm6](MAD/RECORD%20PGMS/PGM6/app/src/main/java/com/example/pgm6) | [MAD/RECORD PGMS/PGM6/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM6/app/src/main/res/layout) |
+| 7 | [MAD/RECORD PGMS/PGM7/app/src/main/java/com/example/pgm7](MAD/RECORD%20PGMS/PGM7/app/src/main/java/com/example/pgm7) | [MAD/RECORD PGMS/PGM7/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM7/app/src/main/res/layout) |
+| 8 | [MAD/RECORD PGMS/PGM8/app/src/main/java/com/example/pgm8](MAD/RECORD%20PGMS/PGM8/app/src/main/java/com/example/pgm8) | [MAD/RECORD PGMS/PGM8/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM8/app/src/main/res/layout) |
+| 9 | [MAD/RECORD PGMS/PGM9/app/src/main/java/com/example/pgm9](MAD/RECORD%20PGMS/PGM9/app/src/main/java/com/example/pgm9) | [MAD/RECORD PGMS/PGM9/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM9/app/src/main/res/layout) |
+| 10 | [MAD/RECORD PGMS/PGM10/app/src/main/java/com/example/pgm10](MAD/RECORD%20PGMS/PGM10/app/src/main/java/com/example/pgm10) | [MAD/RECORD PGMS/PGM10/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM10/app/src/main/res/layout) |
 
-### 1. **XML Layout Files**
-
-Layout files define the user interface (UI) and are written in **XML**.
-
-| File Type | Typical Location | Example File |
-| :--- | :--- | :--- |
-| **Main Layout** | `app/src/main/res/layout/` | `activity_main.xml` |
-| **Other Layouts** | `app/src/main/res/layout/` | `fragment_detail.xml` |
-
----
-
-### 2. **Java / Kotlin Source Code**
-
-The application logic is contained in **Java** or **Kotlin** files (depending on the project language).
-
-| File Type | Typical Location | Example File (Java) | Example File (Kotlin) |
-| :--- | :--- | :--- | :--- |
-| **Main Activity** | `app/src/main/java/com/yourpackage/name/` | `MainActivity.java` | `MainActivity.kt` |
-| **Other Classes** | `app/src/main/java/com/yourpackage/name/` | `DataHelper.java` | `ViewModel.kt` |
-
-*Note: Replace `com/yourpackage/name/` with the actual package structure of your project.*
-
----
-
-## 🚀 Quick Start
-
-1. Open the project in **Android Studio**.
-2. Build and run the app on an emulator or physical device.
