@@ -4,7 +4,7 @@ Below is a table listing the clickable Java and XML file paths for programs 3, a
 
 | Program | Java File Path | XML File Path |
 |---------|---------------|--------------|
-| 3 | [MAD/RECORD PGMS/PGM3/app/src/main/java/com/example/pgm3](MAD/RECORD%20PGMS/PGM3/app/src/main/java/com/example/pgm3) | [MAD/RECORD PGMS/PGM3/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM3/app/src/main/res/layout) |
+| 3 | [MAD/RECORD PGMS/PGM3/app/src/main/java/com/example/pgm3](MAD/RECORD%20PGMS/PGM3/app/src/main/java/com/example/login) | [MAD/RECORD PGMS/PGM3/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM3/app/src/main/res/layout) |
 | 5 | [MAD/RECORD PGMS/PGM5/app/src/main/java/com/example/pgm5](MAD/RECORD%20PGMS/PGM5/app/src/main/java/com/example/pgm5) | [MAD/RECORD PGMS/PGM5/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM5/app/src/main/res/layout) |
 | 6 | [MAD/RECORD PGMS/PGM6/app/src/main/java/com/example/pgm6](MAD/RECORD%20PGMS/PGM6/app/src/main/java/com/example/pgm6) | [MAD/RECORD PGMS/PGM6/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM6/app/src/main/res/layout) |
 | 7 | [MAD/RECORD PGMS/PGM7/app/src/main/java/com/example/pgm7](MAD/RECORD%20PGMS/PGM7/app/src/main/java/com/example/pgm7) | [MAD/RECORD PGMS/PGM7/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM7/app/src/main/res/layout) |
