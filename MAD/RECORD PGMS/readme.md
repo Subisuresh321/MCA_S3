@@ -1,4 +1,4 @@
-# Mobile Application Development (MAD) Programs
+# Mobile Application Development (MAD) Programs Simplified
 
 This repository contains Android application programs developed as part of the MAD lab coursework.
 
