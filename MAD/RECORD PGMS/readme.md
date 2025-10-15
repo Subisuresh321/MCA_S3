@@ -1,14 +1,34 @@
-# Program Java and XML File Paths
+# Mobile Application Development (MAD) Programs
 
-Below is a table listing the clickable Java and XML file paths for programs 3, and 5 through 10. Click the links to navigate to the respective files/directories (assuming a typical GitHub repo structure).
+This repository contains Android application programs developed as part of the MAD lab coursework.
 
-| Program | Java File Path | XML File Path |
-|---------|---------------|--------------|
-| 3 | [MAD/RECORD PGMS/PGM3/app/src/main/java/com/example/login](MAD/RECORD%20PGMS/PGM3/app/src/main/java/com/example/login) | [MAD/RECORD PGMS/PGM3/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM3/app/src/main/res/layout) |
-| 5 | [MAD/RECORD PGMS/PGM5/app/src/main/java/com/example/program3](MAD/RECORD%20PGMS/PGM5/app/src/main/java/com/example/program3) | [MAD/RECORD PGMS/PGM5/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM5/app/src/main/res/layout) |
-| 6 | [MAD/RECORD PGMS/PGM6/app/src/main/java/com/example/pgm6](MAD/RECORD%20PGMS/PGM6/app/src/main/java/com/example/pgm6) | [MAD/RECORD PGMS/PGM6/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM6/app/src/main/res/layout) |
-| 7 | [MAD/RECORD PGMS/PGM7/app/src/main/java/com/example/pgm7](MAD/RECORD%20PGMS/PGM7/app/src/main/java/com/example/pgm7) | [MAD/RECORD PGMS/PGM7/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM7/app/src/main/res/layout) |
-| 8 | [MAD/RECORD PGMS/PGM8/app/src/main/java/com/example/pgm8](MAD/RECORD%20PGMS/PGM8/app/src/main/java/com/example/pgm8) | [MAD/RECORD PGMS/PGM8/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM8/app/src/main/res/layout) |
-| 9 | [MAD/RECORD PGMS/PGM9/app/src/main/java/com/example/pgm9](MAD/RECORD%20PGMS/PGM9/app/src/main/java/com/example/pgm9) | [MAD/RECORD PGMS/PGM9/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM9/app/src/main/res/layout) |
-| 10 | [MAD/RECORD PGMS/PGM10/app/src/main/java/com/example/pgm10](MAD/RECORD%20PGMS/PGM10/app/src/main/java/com/example/pgm10) | [MAD/RECORD PGMS/PGM10/app/src/main/res/layout](MAD/RECORD%20PGMS/PGM10/app/src/main/res/layout) |
+## Programs Overview
+
+| Program | Java Source | Layout (XML) | Description |
+|---------|-------------|--------------|-------------|
+| **Program 3** | [Java Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM3/app/src/main/java/com/example/login) | [Layout Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM3/app/src/main/res/layout) | Login Application |
+| **Program 5** | [Java Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM5/app/src/main/java/com/example/program3) | [Layout Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM5/app/src/main/res/layout) | Radio Button & Checkbox |
+| **Program 6** | [Java Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM6/app/src/main/java/com/example/pgm6) | [Layout Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM6/app/src/main/res/layout) | Implicit Intent |
+| **Program 7** | [Java Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM7/app/src/main/java/com/example/pgm7) | [Layout Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM7/app/src/main/res/layout) | ListView |
+| **Program 8** | [Java Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM8/app/src/main/java/com/example/pgm8) | [Layout Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM8/app/src/main/res/layout) | ScrollView |
+| **Program 9** | [Java Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM9/app/src/main/java/com/example/pgm9) | [Layout Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM9/app/src/main/res/layout) | Spinner |
+| **Program 10** | [Java Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM10/app/src/main/java/com/example/pgm10) | [Layout Files](https://github.com/Subisuresh321/MCA_S3/tree/master/MAD/RECORD%20PGMS/PGM10/app/src/main/res/layout) | SharedPreferences |
+
+## How to Use
+
+1. Click on the **Java Files** link to view the source code
+2. Click on the **Layout Files** link to view the XML layouts
+3. Clone the repository and import the specific program folder into Android Studio
+
+## Requirements
+
+- Android Studio
+
+## Setup Instructions
+
+1. Clone this repository
+2. Open Android Studio
+3. Select "Open an existing project"
+4. Navigate to the specific program folder (e.g., `MAD/RECORD PGMS/PGM3`)
+5. Build and run the application
 
